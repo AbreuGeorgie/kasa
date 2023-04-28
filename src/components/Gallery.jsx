@@ -1,8 +1,8 @@
-/* import AdvertsList from "./AdvertsList" */
+import AdvertsList from "./AdvertsList"
 
 function Gallery() {
     return <div>
-{/* <AdvertsList/> */}
+        <AdvertsList/> 
     </div>
 }
 
