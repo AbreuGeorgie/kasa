@@ -1,0 +1,28 @@
+.error {
+    color: #FF6060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+.number {
+    font-size: 10rem;
+    font-weight: 700;
+    margin: 0em;
+}
+
+.text_error {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.link_error {
+    margin-top: 6em;
+    font-size: 0.8rem;
+}
+
+.link_error:visited {
+    color: #FF6060;
+}
