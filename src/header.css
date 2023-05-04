@@ -5,7 +5,7 @@
     margin: 2em;
 }
 
-.nav_links {
+.nav {
     display: flex;
     justify-content: space-between;
     float: right;
@@ -14,11 +14,16 @@
     font-size: 18px;
 }
 
-.nav_links a.active {
-    color: inherit;
+.nav a.active{
+    color: #FF6060;
+    text-decoration: underline;
+}
+
+.nav a:visited {
+    color: #FF6060;
 }
   
-.nav_links a {
+.nav a {
 
     white-space: pre;
     padding: 1rem;
@@ -27,16 +32,16 @@
     gap: 1rem;
   }
   
-  .nav_links a:hover {
+  .nav a:hover {
     text-decoration: underline;
   }
   
-  .navbar a.active {
+  .navbar div.active {
     background: hsl(224, 98%, 58%);
     color: white;
     text-decoration: underline;
   }
   
-  .navbar a.pending {
+  .navbar div.pending {
     color: hsl(224, 98%, 58%);
   }
