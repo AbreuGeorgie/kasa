@@ -1,5 +1,5 @@
 import AdvertsList from "./AdvertsList"
-import '../Gallery.css';
+import '../CSS/Gallery.css';
 
 function Gallery() {
     return <div className="gallery">

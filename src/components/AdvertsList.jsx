@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../Gallery.css';
+import '../CSS/Gallery.css';
 
 // import data from '../data.json';
 

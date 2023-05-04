@@ -1,4 +1,4 @@
-import '../Footer.css';
+import '../CSS/Footer.css';
 import black_logo from '../assets/black_logo.png'
 
 function Footer () {

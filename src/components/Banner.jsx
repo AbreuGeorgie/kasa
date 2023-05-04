@@ -1,4 +1,4 @@
-import '../Banner.css';
+import '../CSS/Banner.css';
 import vagues from "../assets/vagues.png"
 
 function Banner() {
