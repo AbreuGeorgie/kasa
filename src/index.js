@@ -1,12 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import App from "./components/App"
+import App from "./components/App";
 import ErrorPage from "./error-page";
+import Fiche from "./components/Fiche/Fiche";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
       },
     ], */
   },
+  {
+    path: "/fiches",
+    element: <Fiche/>,
+    errorElement: <ErrorPage />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,8 +1,9 @@
 import AdvertsList from "./AdvertsList"
+import '../Gallery.css';
 
 function Gallery() {
     return <div>
-        <AdvertsList/> 
+             <AdvertsList/>  
     </div>
 }
 

@@ -1,0 +1,28 @@
+.banner{
+    display: flex;
+    height: 17vh;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.image_banner {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    filter : brightness(50%)
+
+}
+
+.text_banner {
+    position: absolute;
+    top: 29%;
+    left: 23%;
+    z-index: 1;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* media queries pour format mobile  
+centrer le texte réellement sur l'image */
