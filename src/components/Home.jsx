@@ -1,11 +1,10 @@
-import '../CSS/App.css';
 import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <div className="Home">
       <Header/>
       <Main/>
       <Footer/>
@@ -13,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
