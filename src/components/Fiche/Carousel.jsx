@@ -60,7 +60,7 @@ const slideStyles = {
     };
     const backgroundImage = {
       ...slideStyles,
-      backgroundImage: `url(${slides[currentIndex].url})`,
+      backgroundImage: `url(${slides[currentIndex]})`,
     };
     const showArrowsAndSlideNumber = () => {
       if(slides.length !== 1 && slides.length !== 0){
