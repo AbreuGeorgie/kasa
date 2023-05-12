@@ -1,7 +1,9 @@
 
 import ContainerCarousel from './ContainerCarousel';
+import RentTitle from './RentTitle';
+/* import data from '../../data.json'; */
 
-function Appartment() {
+function Appartment(fiche) {
     const PageAppartmentStyle = {
         display: "flex",
         flexDirection: "column",
@@ -9,14 +11,14 @@ function Appartment() {
       };
 
     return <div style={PageAppartmentStyle}> 
-        <ContainerCarousel/>
-        <div>Titre de la location</div>
+        <ContainerCarousel pictures={fiche.pictures}/>
+        <RentTitle/>
         <div>Lieu de l'appartement</div>
         <tag>Tags de l'appartement</tag>
         <div>Fiche du propriétaire</div>
         <div>description</div>
         <div>Equipements</div>
-    </div>
+        </div>
 }
 
 export default Appartment
