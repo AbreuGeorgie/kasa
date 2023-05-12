@@ -1,7 +1,15 @@
 
+import ContainerCarousel from './ContainerCarousel';
+
 function Appartment() {
-    return <div> 
-        <div>Carousel</div>
+    const PageAppartmentStyle = {
+        display: "flex",
+        flexDirection: "column",
+        margin: "2em",
+      };
+
+    return <div style={PageAppartmentStyle}> 
+        <ContainerCarousel/>
         <div>Titre de la location</div>
         <div>Lieu de l'appartement</div>
         <tag>Tags de l'appartement</tag>
