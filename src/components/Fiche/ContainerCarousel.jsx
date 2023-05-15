@@ -2,18 +2,19 @@ import React from "react";
 import Carousel from "./Carousel";
 /* import data from '../../data.json'; */
 
-function ContainerCarousel(pictures) {
+
+function ContainerCarousel (props) {
 
     const containerStyles = {
         width: "100%",
         height: "300px",
       };
-
-  const slides = {pictures};
-
+    
+    const slides = props.pictures
+    console.log(props.pictures)
   return (
     <div style={containerStyles}>
-      <Carousel slides={slides} />
+      <Carousel slides={slides}/>
     </div>
   );
 }
