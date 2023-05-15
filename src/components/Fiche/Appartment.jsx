@@ -1,32 +1,49 @@
 
 import ContainerCarousel from './ContainerCarousel';
-//import RentInformations from './RentInformations';
+import RentInformations from './RentInformations';
 import data from '../../data.json';
+import Rating from './Raiting';
+import Tags from './Tags';
+import { useSearchParams } from "react-router-dom";
+import CollapseAppartment from './CollapseAppartment';
 
 const PageAppartmentStyle = {
-  display: "flex",
-  flexDirection: "column",
-  margin: "2em",
-};
+    display: "flex",
+    flexDirection: "column",
+    margin: "2em",
+  };
+
+  const tagContainerStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "5px",
+    padding: "0",
+    margin: "25px 0"
+}
+      
 
 function Appartment() {
+  const [searchParams] = useSearchParams();
+  const id = searchParams.get("id")
+  console.log("a",id)
+  const fiche = data.filter(fiche => id === fiche.id)[0]
+  
 return (
   
-        <div style={PageAppartmentStyle}> 
-        {data.map(fiche => (
-          <div>
-          <ContainerCarousel key={fiche.id} pictures = {fiche.pictures}/>
-          {/* <RentInformations key={fiche.id} 
+    <div style={PageAppartmentStyle}> 
+        <div>
+          <ContainerCarousel key={`${fiche.id} - pictures`} pictures = {fiche.pictures}/>
+          <RentInformations key={fiche.title} 
                 id={fiche.id}
                 title = {fiche.title}
-                description = {fiche.description}
                 host = {fiche.host}
-                rating = {fiche.rating}
                 location = {fiche.location}
-                equipments = {fiche.equipments}
-                tags = {fiche.tags} /> */}
-                </div>
-      ))} </div>)}
+                equipments = {fiche.equipments}/>
+          <Rating key={`${fiche.id} - rating`} id={fiche.id} rating = {fiche.rating}/>
+          <Tags style={tagContainerStyle} key={`${fiche.id} - tags`} tags={fiche.tags} />
+          <CollapseAppartment key={`${fiche.id} - description`} description = {fiche.description} equipments = {fiche.equipments}/>
+        </div>
+    </div>)}
 
 /*               <div key={data[i].id}>
                 {data[i].id}
