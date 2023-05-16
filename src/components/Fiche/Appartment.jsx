@@ -3,7 +3,6 @@ import data from "../../data.json";
 import Rating from "./Raiting";
 import Tags from "./Tags";
 import { useSearchParams } from "react-router-dom";
-import CollapseAppartment from "./CollapseAppartment";
 import Host from "./Host";
 import Title from "./Title";
 import Collapse from "../Collapse";
