@@ -6,6 +6,7 @@ import { useSearchParams } from "react-router-dom";
 import CollapseAppartment from "./CollapseAppartment";
 import Host from "./Host";
 import Title from "./Title";
+import Collapse from "../Collapse";
 
 const PageAppartmentStyle = {
   display: "flex",
@@ -45,11 +46,15 @@ function Appartment() {
           tags={fiche.tags}
           id={fiche.id}
         />
-        <CollapseAppartment
-          key={`${fiche.id} - description`}
-          description={fiche.description}
-          equipments={fiche.equipments}
-          id={fiche.id}
+        <Collapse
+          key={`${id} - Description Collapse`}
+          title="Description"
+          textCollapse={fiche.description}
+        />
+        <Collapse
+          key={`${id} - Equipments Collapse`}
+          title="Equipements"
+          textCollapse={fiche.equipments}
         />
       </div>
     </div>
