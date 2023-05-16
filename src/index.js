@@ -6,6 +6,7 @@ import App from "./components/Home";
 import ErrorPage from "./error-page";
 import Fiche from "./components/Fiche/Fiche";
 import About from "./components/About/About";
+import './app.scss'
 
 const router = createBrowserRouter([
   {
