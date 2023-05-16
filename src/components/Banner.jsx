@@ -1,15 +1,42 @@
-import "../CSS/Banner.css";
 import vagues from "../assets/vagues.png";
+
+const bannerStyle = {
+  display: "flex",
+  height: "17vh",
+  width: "100%",
+  marginTop: "2rem",
+}
+
+const imageBannerStyle = {
+  objectFit: "cover",
+  height: "100%",
+  width: "100%",
+  borderRadius: "1em",
+  filter: "brightness(50%)",
+}
+
+const textBannerStyle = {
+  position: "absolute",
+  top: "29%",
+  left: "23%",
+  zIndex: "1",
+  color: "white",
+  fontSize: "30px",
+  fontWeight: "500",
+}
+
+/* media queries pour format mobile  
+centrer le texte réellement sur l'image */
 
 function Banner() {
   return (
-    <div className="banner">
+    <div style={bannerStyle}>
       <img
-        className="image_banner"
+        style={imageBannerStyle}
         src={vagues}
         alt="vagues contre une falaise"
       />
-      <div className="text_banner">Chez vous, partout et ailleurs</div>
+      <div style={textBannerStyle}>Chez vous, partout et ailleurs</div>
     </div>
   );
 }

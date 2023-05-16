@@ -1,11 +1,27 @@
-import "../CSS/Footer.css";
 import black_logo from "../assets/black_logo.png";
+
+const footerStyle = {
+  color: "white",
+  backgroundColor: "black",
+  display: "flex",
+  justifyContent: "center",
+  alignContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+  paddingTop: "2rem",
+  fontSize: "22px",
+};
+
+const blackLogoStyle = {
+  height: "65px",
+  width: "130px",
+};
 
 function Footer() {
   return (
-    <div className="footer">
+    <div style={footerStyle}>
       <img
-        className="black_logo"
+        style={blackLogoStyle}
         src={black_logo}
         alt="logo Kasa"
       />
