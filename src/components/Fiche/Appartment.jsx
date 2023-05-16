@@ -1,10 +1,11 @@
 import ContainerCarousel from "./ContainerCarousel";
-import RentInformations from "./RentInformations";
 import data from "../../data.json";
 import Rating from "./Raiting";
 import Tags from "./Tags";
 import { useSearchParams } from "react-router-dom";
 import CollapseAppartment from "./CollapseAppartment";
+import Host from "./Host";
+import Title from "./Title";
 
 const PageAppartmentStyle = {
   display: "flex",
@@ -33,13 +34,14 @@ function Appartment() {
           key={`${fiche.id} - pictures`}
           pictures={fiche.pictures}
         />
-        <RentInformations
-          key={fiche.title}
-          id={fiche.id}
-          title={fiche.title}
-          host={fiche.host}
-          location={fiche.location}
-          equipments={fiche.equipments}
+        <Title
+        key={`${fiche.id} - title`}
+        title={fiche.title}
+        location={fiche.location}
+        />
+        <Host
+        key={`${fiche.id} - host`}
+        host={fiche.host}
         />
         <Rating
           key={`${fiche.id} - rating`}
@@ -60,25 +62,5 @@ function Appartment() {
     </div>
   );
 }
-
-/*               <div key={data[i].id}>
-                {data[i].id}
-                {data[i].title}
-                {data[i].cover}
-                {data[i].pictures}
-                {data[i].description}
-                {data[i].host}
-                {data[i].rating}
-                {data[i].location}
-                {data[i].equipments}
-                {data[i].tags}
-                  </div> */
-
-/* <RentTitle key={data[i].id} title = {data[i].title}/>
-        <RentLocation location = {data[i].location}/>
-        <RentTags tags = {data[i].tags} />
-        <HostForm host = {data[i].host} />
-        <RentDescription desciption = {data[i].description}/>
-        <RentEquipments equipments = {data[i].equipments}/>  */
 
 export default Appartment;
