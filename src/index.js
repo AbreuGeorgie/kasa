@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import ErrorPage from "./pages/error-page";
 import Home from "./pages/Home";
-import Fiche from "./pages/Fiche";
 import About from "./pages/About";
 import "./app.scss";
+import Appartment from "./pages/Appartment";
 
 const rootElement = document.getElementById("root");
 
@@ -20,8 +20,8 @@ createRoot(rootElement).render(
             element={<Home />}
           />
           <Route
-            path="/fiches"
-            element={<Fiche />}
+            path="/appartment"
+            element={<Appartment />}
           />
           <Route
             path="/about"

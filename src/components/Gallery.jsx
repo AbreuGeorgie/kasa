@@ -43,7 +43,7 @@ function Gallery() {
     };
     fiches.push(
       <Link
-        to={`/Fiches?id=${data[i].id}`}
+        to={`/appartment?id=${data[i].id}`}
         style={backgroundImage}
         key={data[i].id}
       >
