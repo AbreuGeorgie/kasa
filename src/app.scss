@@ -2,12 +2,25 @@ $font-stack: Montserrat;
 $primary-color: #ff6060;
 $secondary-color: white;
 
+* {
+    background-size: cover;
+}
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
   margin: 2em;
   font-weight: 400;
   font-size: "14px";
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -21,7 +34,33 @@ img {
   object-fit: cover;
 }
 
-footer,
+h1 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+} 
+
 h2 {
   color: $secondary-color;
+  font-size: 14px;
+  background-color: $primary-color;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  & span {
+    float: right;
+  }
+}
+
+.Collapse {
+    background-color: #F6F6F6;
+    border-radius: 0.3rem;
+    & li, p {
+        padding: 0.2rem 1rem 0.5rem;
+        line-height: 1.5rem;
+    }
+}
+
+footer{
+    color: $secondary-color;
 }

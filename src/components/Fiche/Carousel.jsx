@@ -45,23 +45,23 @@ const slideNumber = {
   fontSize: "20px",
 };
 
-const Carousel = ({ slides }) => {
+function Carousel({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const imagePrev = () => {
+  function imagePrev() {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
-  };
-  const imageNext = () => {
+  }
+  function imageNext() {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-  };
+  }
   const backgroundImage = {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex]})`,
   };
-  const showArrowsAndSlideNumber = () => {
+  function showArrowsAndSlideNumber() {
     if (slides.length !== 1 && slides.length !== 0) {
       return (
         <div>
@@ -83,13 +83,13 @@ const Carousel = ({ slides }) => {
         </div>
       );
     }
-  };
+  }
   return (
     <div style={sliderStyles}>
       <div style={backgroundImage}></div>
       {showArrowsAndSlideNumber()}
     </div>
   );
-};
+}
 
 export default Carousel;

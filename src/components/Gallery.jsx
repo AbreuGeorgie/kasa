@@ -21,9 +21,7 @@ const appartmentStyle = {
   minHeight: "200px",
   borderRadius: "0.5em",
   display: "flex",
-  alignItems: "end",
-  justifyItems: "start",
-  objectFit: "cover",
+  placeItems: "end start",
 };
 
 const rentNameStyle = {
@@ -44,14 +42,13 @@ function Gallery() {
       backgroundImage: `url(${data[i].cover})`,
     };
     fiches.push(
-      <div
+      <Link
+        to={`/Fiches?id=${data[i].id}`}
         style={backgroundImage}
         key={data[i].id}
       >
-        <Link to={`/Fiches?id=${data[i].id}`}>
-          <div style={rentNameStyle}>{data[i].title}</div>
-        </Link>
-      </div>
+        <div style={rentNameStyle}>{data[i].title}</div>
+      </Link>
     );
   }
   return <div style={galleryStyle}>{fiches}</div>;

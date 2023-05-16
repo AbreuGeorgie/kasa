@@ -1,7 +1,7 @@
 function Title({ title, location }) {
   return (
     <>
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       <p>{location}</p>
     </>
   );
