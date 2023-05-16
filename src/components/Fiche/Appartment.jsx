@@ -13,14 +13,6 @@ const PageAppartmentStyle = {
   margin: "2em",
 };
 
-const tagContainerStyle = {
-  display: "flex",
-  flexWrap: "wrap",
-  gap: "5px",
-  padding: "0",
-  margin: "25px 0",
-};
-
 function Appartment() {
   const [searchParams] = useSearchParams();
   const id = searchParams.get("id");
@@ -49,7 +41,6 @@ function Appartment() {
           rating={fiche.rating}
         />
         <Tags
-          style={tagContainerStyle}
           key={`${fiche.id} - tags`}
           tags={fiche.tags}
         />
