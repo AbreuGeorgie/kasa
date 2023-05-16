@@ -5,7 +5,7 @@ import Layout from "./Layout";
 import ErrorPage from "./pages/error-page";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import "./app.scss";
+import "./style.scss";
 import Appartment from "./pages/Appartment";
 
 const rootElement = document.getElementById("root");

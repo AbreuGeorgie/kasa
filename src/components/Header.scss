@@ -1,0 +1,35 @@
+@use "../style";
+
+.nav a.active {
+  //je n'arrive pas à l'enlever
+  color: style.$primary-color;
+  text-decoration: underline;
+}
+
+.navbar {
+  @include style.spaceBetween;
+  align-items: center;
+  margin: 2em;
+}
+
+.nav {
+  @include style.spaceBetween;
+  float: right;
+  font-size: 18px;
+  & .visited,
+  a {
+    color: app.$primary-color;
+  }
+  & a {
+    white-space: pre;
+    padding: 1rem;
+    text-decoration: none;
+    gap: 1rem;
+    & :hover {
+      text-decoration: underline;
+    }
+    & :active {
+      text-decoration: underline; //ne marche pas
+    }
+  }
+}
