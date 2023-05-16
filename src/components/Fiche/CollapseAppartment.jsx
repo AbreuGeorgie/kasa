@@ -1,13 +1,13 @@
 import Collapse from "../About/Collapse";
 
-function CollapseAppartment(props) {
+function CollapseAppartment({description, equipments}) {
   return (
     <>
       <Collapse title="Description">
-        <p>{props.description}</p>
+        <p>{description}</p>
       </Collapse>
       <Collapse title="Equipements">
-        <p>{props.equipments}</p>
+        <p>{equipments}</p>
       </Collapse>
     </>
   );
