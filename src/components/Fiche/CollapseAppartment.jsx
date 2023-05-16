@@ -1,16 +1,21 @@
 import Collapse from "../About/Collapse";
 
-function CollapseAppartment({description, equipments}) {
-  return (
-    <>
+function CollapseAppartment(props) {
+  const equipments = props.equipments;
+    const listEquipments = equipments.map((equipment) =>
+      <li>{equipment}</li>
+    );
+    return (
+      <>
       <Collapse title="Description">
-        <p>{description}</p>
+        <p>{props.description}</p>
       </Collapse>
       <Collapse title="Equipements">
-        <p>{equipments}</p>
+      <ul>{listEquipments}</ul>
       </Collapse>
     </>
-  );
-}
+    );
+};
+
 
 export default CollapseAppartment;
