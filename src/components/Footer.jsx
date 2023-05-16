@@ -19,14 +19,14 @@ const blackLogoStyle = {
 
 function Footer() {
   return (
-    <div style={footerStyle}>
+    <footer style={footerStyle}>
       <img
         style={blackLogoStyle}
         src={black_logo}
         alt="logo Kasa"
       />
       <p>© 2020 Kasa. All rights reserved</p>
-    </div>
+    </footer>
   );
 }
 

@@ -12,7 +12,7 @@ const starOnStyle = {
   color: "red",
 };
 
-function Rating({ rating }) {
+function Rating({ rating, id }) {
   const stars = [];
   const starsOff = [];
   for (let i = 0; i < rating; i++) {
@@ -30,7 +30,7 @@ function Rating({ rating }) {
     <div style={raitingStyle}>
       {stars.map((star, i) => (
         <FontAwesomeIcon
-          key={rating}
+          key={`${id} Star On ${i + 1}`}
           icon={faStar}
           style={starOnStyle}
         />
@@ -38,7 +38,7 @@ function Rating({ rating }) {
       {stars.length !== 5
         ? starsOff.map((starOff, i) => (
             <FontAwesomeIcon
-              key={`${rating} - Star Off`}
+              key={`${id} Star Off ${i + 1}`}
               icon={faStar}
             />
           ))

@@ -23,7 +23,7 @@ const appartmentStyle = {
   display: "flex",
   alignItems: "end",
   justifyItems: "start",
-  objectifFit: "cover",
+  objectFit: "cover",
 };
 
 const rentNameStyle = {

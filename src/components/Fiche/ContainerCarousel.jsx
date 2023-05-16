@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
 
-function ContainerCarousel({pictures}) {
+function ContainerCarousel({ pictures }) {
   const containerStyles = {
     width: "100%",
     height: "300px",

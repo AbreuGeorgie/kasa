@@ -27,13 +27,13 @@ function Appartment() {
           pictures={fiche.pictures}
         />
         <Title
-        key={`${fiche.id} - title`}
-        title={fiche.title}
-        location={fiche.location}
+          key={`${fiche.id} - title`}
+          title={fiche.title}
+          location={fiche.location}
         />
         <Host
-        key={`${fiche.id} - host`}
-        host={fiche.host}
+          key={`${fiche.id} - host`}
+          host={fiche.host}
         />
         <Rating
           key={`${fiche.id} - rating`}
@@ -43,6 +43,7 @@ function Appartment() {
         <Tags
           key={`${fiche.id} - tags`}
           tags={fiche.tags}
+          id={fiche.id}
         />
         <CollapseAppartment
           key={`${fiche.id} - description`}

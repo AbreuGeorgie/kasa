@@ -1,15 +1,17 @@
-import Header from "../Header";
-import Footer from "../Footer";
-import React from "react";
 import Collapse from "./Collapse";
-import Banner from "../Banner";
 
-function About() {
-  return (
-    <div className="About">
-      <Header />
-      <Banner />
-      <Collapse title="Fiabilité">
+/* const aboutStyle = {
+  color: "white",
+  backgroundColor: "#ff6060",
+  fontWeight: "500",
+  borderRadius: "0.3em",
+  padding: "0.5rem",
+  } */
+
+function AboutCollapse () {
+  return(
+  <div>
+  <Collapse title="Fiabilité">
         <p>
           Les annonces postées sur Kasa garantissent une fiabilité totale. Les
           photos sont conformes aux logements, et toutes les informations sont
@@ -40,9 +42,8 @@ function About() {
           sur la sécurité domestique pour nos hôtes.
         </p>
       </Collapse>
-      <Footer />
-    </div>
-  );
-}
+      </div>
+  )
+};
 
-export default About;
+export default AboutCollapse;

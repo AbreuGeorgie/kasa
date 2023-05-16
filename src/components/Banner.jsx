@@ -5,7 +5,7 @@ const bannerStyle = {
   height: "17vh",
   width: "100%",
   marginTop: "2rem",
-}
+};
 
 const imageBannerStyle = {
   objectFit: "cover",
@@ -13,7 +13,7 @@ const imageBannerStyle = {
   width: "100%",
   borderRadius: "1em",
   filter: "brightness(50%)",
-}
+};
 
 const textBannerStyle = {
   position: "absolute",
@@ -23,7 +23,7 @@ const textBannerStyle = {
   color: "white",
   fontSize: "30px",
   fontWeight: "500",
-}
+};
 
 /* media queries pour format mobile  
 centrer le texte réellement sur l'image */

@@ -16,13 +16,16 @@ const tagContainerStyle = {
 };
 
 function Tags(props) {
-    const tags = props.tags;
-    const listTags = tags.map((tag) =>
-      <li style={li} >{tag}</li>
-    );
-    return (
-      <ul style={tagContainerStyle} >{listTags}</ul>
-    );
-};
+  const tags = props.tags;
+  const listTags = tags.map((tag, id) => (
+    <li
+      style={li}
+      key={`${id} - ${tag}`}
+    >
+      {tag}
+    </li>
+  ));
+  return <ul style={tagContainerStyle}>{listTags}</ul>;
+}
 
 export default Tags;
