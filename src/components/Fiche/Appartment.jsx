@@ -49,6 +49,7 @@ function Appartment() {
           key={`${fiche.id} - description`}
           description={fiche.description}
           equipments={fiche.equipments}
+          id={fiche.id}
         />
       </div>
     </div>

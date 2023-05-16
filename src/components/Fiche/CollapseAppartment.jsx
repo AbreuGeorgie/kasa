@@ -1,18 +1,18 @@
-import Collapse from "../About/Collapse";
+import Collapse from "../Collapse";
 
-function CollapseAppartment(props) {
-  const equipments = props.equipments;
-  const listEquipments = equipments.map((i, equipment) => (
-    <li key={`${i} - ${equipment}`}>{equipment}</li>
-  ));
+function CollapseAppartment({ equipments, description, id }) {
   return (
     <>
-      <Collapse title="Description">
-        <p>{props.description}</p>
-      </Collapse>
-      <Collapse title="Equipements">
-        <ul>{listEquipments}</ul>
-      </Collapse>
+      <Collapse
+        key={`${id} - Description Collapse`}
+        title="Description"
+        textCollapse={description}
+      />
+      <Collapse
+        key={`${id} - Equipments Collapse`}
+        title="Equipements"
+        textCollapse={equipments}
+      />
     </>
   );
 }
