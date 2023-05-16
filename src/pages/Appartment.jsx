@@ -1,10 +1,10 @@
-import ContainerCarousel from "../components/Fiche/ContainerCarousel";
+import ContainerCarousel from "../components/ContainerCarousel";
 import data from "../data.json";
-import Rating from "../components/Fiche/Raiting";
-import Tags from "../components/Fiche/Tags";
+import Rating from "../components/Raiting";
+import Tags from "../components/Tags";
 import { useSearchParams } from "react-router-dom";
-import Host from "../components/Fiche/Host";
-import Title from "../components/Fiche/Title";
+import Host from "../components/Host";
+import Title from "../components/Title";
 import Collapse from "../components/Collapse";
 
 const PageAppartmentStyle = {
