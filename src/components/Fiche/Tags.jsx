@@ -7,16 +7,22 @@ const li = {
   backgroundColor: "red",
   color: "white",
 };
+const tagContainerStyle = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "5px",
+  padding: "0",
+  margin: "25px 0",
+};
 
-function Tags({ tags }) {
-  return (
-    <li
-      style={li}
-      key={tags}
-    >
-      {tags}
-    </li>
-  );
-}
+function Tags(props) {
+    const tags = props.tags;
+    const listTags = tags.map((tag) =>
+      <li style={li} >{tag}</li>
+    );
+    return (
+      <ul style={tagContainerStyle} >{listTags}</ul>
+    );
+};
 
 export default Tags;
