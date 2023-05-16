@@ -35,13 +35,13 @@ const rentNameStyle = {
 };
 
 function Gallery() {
-  const fiches = [];
+  const cards = [];
   for (let i = 0; i < data.length; i++) {
     const backgroundImage = {
       ...appartmentStyle,
       backgroundImage: `url(${data[i].cover})`,
     };
-    fiches.push(
+    cards.push(
       <Link
         to={`/appartment?id=${data[i].id}`}
         style={backgroundImage}
@@ -51,7 +51,7 @@ function Gallery() {
       </Link>
     );
   }
-  return <div style={galleryStyle}>{fiches}</div>;
+  return <div style={galleryStyle}>{cards}</div>;
 }
 
 export default Gallery;
