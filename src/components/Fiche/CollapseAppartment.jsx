@@ -1,16 +1,16 @@
-import Collapse from '../About/Collapse';
+import Collapse from "../About/Collapse";
 
 function CollapseAppartment(props) {
-    return (
-        <>
-        <Collapse title="Description">
+  return (
+    <>
+      <Collapse title="Description">
         <p>{props.description}</p>
-        </Collapse>
-        <Collapse title="Equipements">
+      </Collapse>
+      <Collapse title="Equipements">
         <p>{props.equipments}</p>
-        </Collapse>
-        </>
-    );
-  }
-  
-  export default CollapseAppartment;
+      </Collapse>
+    </>
+  );
+}
+
+export default CollapseAppartment;

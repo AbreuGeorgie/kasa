@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Collapse = ({ title, children }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);

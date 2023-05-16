@@ -2,15 +2,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const raitingStyle = {
-        display: "flex",
-        fontSize: "1.3rem",
-        gap: "6px",
-        color: "#e3e3e3",
-        }
+  display: "flex",
+  fontSize: "1.3rem",
+  gap: "6px",
+  color: "#e3e3e3",
+};
 
 const starOnStyle = {
-    color: "red",
-}
+  color: "red",
+};
 
 function Rating({ rating }) {
   const stars = [];
@@ -47,4 +47,4 @@ function Rating({ rating }) {
   );
 }
 
-export default Rating
+export default Rating;

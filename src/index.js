@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./CSS/index.css";
 import App from "./components/Home";
 import ErrorPage from "./error-page";
@@ -13,7 +10,7 @@ import About from "./components/About/About";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
     errorElement: <ErrorPage />,
     /* children: [        route enfants ici
       {
@@ -24,12 +21,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/fiches",
-    element: <Fiche/>,
+    element: <Fiche />,
   },
   {
     path: "/About",
-    element: <About/>,
-  }
+    element: <About />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -37,8 +34,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-
 
 /* import ReactDOM from 'react-dom';
 import { StrictMode } from 'react';
