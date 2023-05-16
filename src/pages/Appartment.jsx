@@ -1,4 +1,3 @@
-import ContainerCarousel from "../components/ContainerCarousel";
 import data from "../data.json";
 import Rating from "../components/Raiting";
 import Tags from "../components/Tags";
@@ -6,6 +5,7 @@ import { useSearchParams } from "react-router-dom";
 import Host from "../components/Host";
 import Title from "../components/Title";
 import Collapse from "../components/Collapse";
+import Carousel from "../components/Carousel";
 
 const PageAppartmentStyle = {
   display: "flex",
@@ -22,7 +22,7 @@ function Appartment() {
   return (
     <div style={PageAppartmentStyle}>
       <div>
-        <ContainerCarousel
+        <Carousel
           key={`${fiche.id} - pictures`}
           pictures={fiche.pictures}
         />

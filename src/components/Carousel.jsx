@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-const slideStyles = {
+const containerStyles = {
+  width: "100%",
+  height: "300px",
+};
+
+const picturesStyles = {
   width: "100%",
   height: "100%",
   borderRadius: "10px",
@@ -45,24 +50,24 @@ const slideNumber = {
   fontSize: "20px",
 };
 
-function Carousel({ slides }) {
+function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   function imagePrev() {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? pictures.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   }
   function imageNext() {
-    const isLastSlide = currentIndex === slides.length - 1;
+    const isLastSlide = currentIndex === pictures.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   }
   const backgroundImage = {
-    ...slideStyles,
-    backgroundImage: `url(${slides[currentIndex]})`,
+    ...picturesStyles,
+    backgroundImage: `url(${pictures[currentIndex]})`,
   };
   function showArrowsAndSlideNumber() {
-    if (slides.length !== 1 && slides.length !== 0) {
+    if (pictures.length !== 1 && pictures.length !== 0) {
       return (
         <div>
           <div
@@ -78,16 +83,18 @@ function Carousel({ slides }) {
             ❱
           </div>
           <div style={slideNumber}>
-            {currentIndex + 1}/{slides.length}
+            {currentIndex + 1}/{pictures.length}
           </div>
         </div>
       );
     }
   }
   return (
-    <div style={sliderStyles}>
-      <div style={backgroundImage}></div>
-      {showArrowsAndSlideNumber()}
+    <div style={containerStyles}>
+      <div style={sliderStyles}>
+        <div style={backgroundImage}></div>
+        {showArrowsAndSlideNumber()}
+      </div>
     </div>
   );
 }
