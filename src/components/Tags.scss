@@ -1,0 +1,25 @@
+@use "../style";
+
+.tagList {
+  list-style: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: style.$primary-color;
+  color: style.$secondary-color;
+  @media screen and (max-width: 480px) {
+    font-size: 11px;
+    }
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 1.5em 0 0.2em;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    }
+}

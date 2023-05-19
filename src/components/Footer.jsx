@@ -1,33 +1,17 @@
 import black_logo from "../assets/black_logo.png";
-
-const footerStyle = {
-  color: "white",
-  backgroundColor: "black",
-  display: "flex",
-  justifyContent: "center",
-  alignContent: "center",
-  flexDirection: "column",
-  alignItems: "center",
-  paddingTop: "2rem",
-  fontSize: "22px",
-};
-
-const blackLogoStyle = {
-  height: "65px",
-  width: "130px",
-};
+import "./Footer.scss";
 
 function Footer() {
   return (
-    <footer style={footerStyle}>
+    <footer className="footer">
       <img
-        style={blackLogoStyle}
+        className="blackLogo"
         src={black_logo}
         alt="logo Kasa"
       />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
-}
+  }
 
 export default Footer;

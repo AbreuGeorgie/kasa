@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import "./Collapse.scss";
 
 const Collapse = ({ title, textCollapse }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);

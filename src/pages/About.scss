@@ -1,0 +1,23 @@
+.About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.collapseAbout {
+    width: 80%;
+    font-size: 18px;
+    & h2 {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 480px){
+    font-size: 12px;
+    & h2 {
+        font-size: 14px;
+    }
+    }
+    @media screen and (max-width: 480px){
+    width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+@use "../style";
+
+.appartmentPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}  
+
+.descriptionHeader{
+@include style.spaceBetween;
+gap: 2em;
+@media screen and (max-width: 480px) {
+flex-direction: column;
+margin: 1px 0;
+gap: 1em;
+}
+}
+
+
+h1{
+    margin-bottom: 0.3em;
+    @media screen and (max-width: 480px) {
+        font-size: 20px;
+        }
+}
+
+.location{
+    margin-top: 0;
+    @media screen and (max-width: 480px) {
+        font-size: 14px;
+        }
+}
+
+.hostAndRatings{
+    margin: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    @media screen and (max-width: 480px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        }
+}
+
+.host{
+    @include style.spaceBetween;
+    gap: 0.5em;
+}
+
+.hostPicture{
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+}
+
+.hostName {
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 5rem;
+    text-align: end;
+}
+
+.collapseDescription {
+    display: flex;
+    gap: 4em;
+     & > * {
+        flex: 1 1;
+      } 
+    & p, ul {
+        padding: 2rem 1rem;
+        @media screen and (max-width: 480px) {
+            font-size: 13px;
+            padding-bottom: 0;
+            padding-top: 1,3em;
+            }
+    }
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        gap: 1em;
+        }
+}

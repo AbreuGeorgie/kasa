@@ -1,5 +1,7 @@
+@use "../style";
+
 .error {
-  color: #ff6060;
+  color: style.$primary-color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,5 +26,5 @@
 }
 
 .link_error:visited {
-  color: #ff6060;
+  color: style.$primary-color;
 }

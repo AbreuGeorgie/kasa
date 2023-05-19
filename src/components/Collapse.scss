@@ -1,0 +1,30 @@
+@use "../style";
+
+@mixin descriptionText{
+    line-height: 1.5rem;
+    background-color: #F6F6F6;
+    margin: 0;
+    padding: 1rem 1rem 0.5rem;
+    border-radius: 0 0 0.3em 0.3em;
+    @media screen and (max-width: 480px){
+        margin-bottom: 0;
+    }
+}
+
+.Collapse {
+    border-radius: 0.3rem;
+    margin-top: 1.4rem;
+    & p, ul {
+        @include descriptionText;   
+        @media screen and (max-width: 480px){
+            min-height: 12em;
+        }
+    }
+    & h2 {
+        margin: 0;
+    }
+}
+
+/* .collapseClosed{
+    background-color: style.$secondary-color;
+} */

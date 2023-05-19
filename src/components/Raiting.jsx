@@ -1,16 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-
-const raitingStyle = {
-  display: "flex",
-  fontSize: "1.3rem",
-  gap: "6px",
-  color: "#e3e3e3",
-};
-
-const starOnStyle = {
-  color: "red",
-};
+import "./Rating.scss";
 
 function Rating({ rating, id }) {
   const stars = [];
@@ -27,12 +17,12 @@ function Rating({ rating, id }) {
   }
 
   return (
-    <div style={raitingStyle}>
+    <div className="raiting">
       {stars.map((star, i) => (
         <FontAwesomeIcon
+          className="starOn"
           key={`${id} Star On ${i + 1}`}
           icon={faStar}
-          style={starOnStyle}
         />
       ))}
       {stars.length !== 5

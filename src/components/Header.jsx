@@ -7,6 +7,7 @@ function Header() {
     <nav className="navbar">
       <Link to="/">
         <img
+          className="kasa"
           src={logo}
           alt="logo Kasa"
         />

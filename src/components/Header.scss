@@ -9,8 +9,16 @@
 .navbar {
   @include style.spaceBetween;
   align-items: center;
-  margin: 2em;
+  margin: 2em 2em 0.5em;
+  width: 92%
 }
+
+.kasa{
+  @media screen and (max-width: 480px){
+    width: 70%;
+  }
+}
+
 
 .nav {
   @include style.spaceBetween;
@@ -22,7 +30,7 @@
   }
   & a {
     white-space: pre;
-    padding: 1rem;
+    padding: 1rem 0 1rem 2rem;
     text-decoration: none;
     gap: 1rem;
     & :hover {
@@ -30,6 +38,9 @@
     }
     & :active {
       text-decoration: underline; //ne marche pas
+    }
+    @media screen and (max-width: 480px){
+      font-size: 12px;
     }
   }
 }

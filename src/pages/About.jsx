@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
+import "./About.scss";
 
 const aboutCollapse = [
   {
@@ -25,15 +26,17 @@ function About() {
   return (
     <main className="About">
       <Banner />
-      {aboutCollapse.map((collapse, i) => (
-        <Collapse
-          key={`About Collapse ${i + 1}/${aboutCollapse.length} - ${
-            collapse.title
-          }`}
-          title={collapse.title}
-          textCollapse={collapse.text}
-        />
-      ))}
+      <div className="collapseAbout">
+        {aboutCollapse.map((collapse, i) => (
+          <Collapse
+            key={`About Collapse ${i + 1}/${aboutCollapse.length} - ${
+              collapse.title
+            }`}
+            title={collapse.title}
+            textCollapse={collapse.text}
+          />
+        ))}
+      </div>
     </main>
   );
 }
