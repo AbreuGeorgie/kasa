@@ -1,21 +1,21 @@
 @use "../style";
 
 @mixin arrows {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    font-size: 50px;
-    color: style.$secondary-color;
-    z-index: 1;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  color: style.$secondary-color;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .container {
   width: 100%;
   height: 400px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 530px) {
     height: 250px;
-}
+  }
 }
 
 .slider {
@@ -37,7 +37,7 @@
 }
 
 .right-arrow {
-@include arrows;
+  @include arrows;
   right: 32px;
 }
 

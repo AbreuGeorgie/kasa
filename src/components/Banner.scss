@@ -1,34 +1,50 @@
 @use "../style";
 
-.bannerStyle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25vh;
-    width: 100%;
-    margin-top: 2rem;
-    border-radius: 0.3em;
-    //color: style.$secondary-color;
-    font-size: 30px;
-    font-weight: 500;
-    background-image: url("../assets/vagues.png");
-    filter: brightness(50%);
-    @media screen and (min-width: 792px){
-      border-radius: 0.5em;
-    }
-    @media screen and (max-width: 480px){
-      margin-top: 0;
-      justify-content: start;
-      font-size: 25px;
-      height: 15vh;
-      & p {
-        width: 232px;
-      }
-    }
-    & p {
-      margin: 1em
-    }
+.banner {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 1em;
 
+  @media screen and (min-width: 700px) {
+    border-radius: 0.5em;
+  }
+  @media screen and (max-width: 530px) {
+    margin-top: 0;
+    height: 120px;
+  }
+}
 
-  };
-  
+.imageBanner {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  filter: brightness(60%);
+  @media screen and (max-width: 530px) {
+    border-radius: 0.5em;
+  }
+}
+
+.textBanner {
+  color: style.$secondary-color;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  text-align: center;
+  line-height: 200px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  @media screen and (max-width: 530px) {
+    width: 232px;
+    line-height: normal;
+    top: 1em;
+    text-align: start;
+    margin-left: 1em;
+    font-size: 25px;
+  }
+}

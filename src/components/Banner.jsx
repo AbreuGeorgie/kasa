@@ -1,19 +1,22 @@
-
 import "./Banner.scss";
 
 /* media queries pour format mobile  
 centrer le texte réellement sur l'image */
 
-function Banner() {
+function Banner({ imgUrl, imgAlt, isTextShow }) {
   return (
-      /* <img
-        className="imageBannerStyle"
-        src={vagues}
-        alt="vagues contre une falaise"
-      /> */
-      <div className="bannerStyle">
-        <p>Chez vous, partout et ailleurs</p>
-      </div>
+    <div className="banner">
+      <img
+        className="imageBanner"
+        src={imgUrl}
+        alt={imgAlt}
+      />
+      {isTextShow ? (
+        <p className="textBanner">Chez vous, partout et ailleurs</p>
+      ) : (
+        ""
+      )}
+    </div>
   );
 }
 

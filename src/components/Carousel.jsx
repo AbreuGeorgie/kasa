@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Carousel.scss";
 
 function Carousel({ pictures }) {
@@ -26,10 +29,16 @@ function Carousel({ pictures }) {
     if (pictures.length !== 1 && pictures.length !== 0) {
       return (
         <div>
-          <div onClick={imagePrev} className="left-arrow">
+          <div
+            onClick={imagePrev}
+            className="left-arrow"
+          >
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
-          <div onClick={imageNext} className="right-arrow">
+          <div
+            onClick={imageNext}
+            className="right-arrow"
+          >
             <FontAwesomeIcon icon={faChevronRight} />
           </div>
           <div className="slide-number">
@@ -43,7 +52,10 @@ function Carousel({ pictures }) {
   return (
     <div className="container">
       <div className="slider">
-        <div className="background-image" style={backgroundImage}></div>
+        <div
+          className="background-image"
+          style={backgroundImage}
+        ></div>
         {showArrowsAndSlideNumber()}
       </div>
     </div>

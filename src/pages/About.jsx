@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import "./About.scss";
+import montagnes from "../assets/montagnes.png";
 
 const aboutCollapse = [
   {
@@ -25,7 +26,12 @@ const aboutCollapse = [
 function About() {
   return (
     <main className="About">
-      <Banner />
+      <Banner
+        className="banner"
+        imgUrl={montagnes}
+        imgAlt="vue sur les montagnes"
+        isTextShow={false}
+      />
       <div className="collapseAbout">
         {aboutCollapse.map((collapse, i) => (
           <Collapse

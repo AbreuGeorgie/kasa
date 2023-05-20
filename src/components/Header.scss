@@ -1,7 +1,6 @@
 @use "../style";
 
 .nav a.active {
-  //je n'arrive pas à l'enlever
   color: style.$primary-color;
   text-decoration: underline;
 }
@@ -10,15 +9,14 @@
   @include style.spaceBetween;
   align-items: center;
   margin: 2em 2em 0.5em;
-  width: 92%
+  width: 92%;
 }
 
-.kasa{
-  @media screen and (max-width: 480px){
+.kasa {
+  @media screen and (max-width: 530px) {
     width: 70%;
   }
 }
-
 
 .nav {
   @include style.spaceBetween;
@@ -39,8 +37,9 @@
     & :active {
       text-decoration: underline; //ne marche pas
     }
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 530px) {
       font-size: 12px;
+      text-transform: uppercase;
     }
   }
 }

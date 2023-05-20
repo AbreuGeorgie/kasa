@@ -3,7 +3,7 @@ $primary-color: #ff6060;
 $secondary-color: white;
 
 * {
-    background-size: cover;
+  background-size: cover;
 }
 
 body {
@@ -12,15 +12,16 @@ body {
   font-weight: 400;
   font-size: "14px";
   width: 100%;
+  min-width: 300px;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -35,10 +36,10 @@ img {
 }
 
 h1 {
-    font-family: Montserrat;
-    font-size: 25px;
-    font-weight: 500;
-} 
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 500;
+}
 
 h2 {
   color: $secondary-color;
@@ -67,7 +68,9 @@ main {
   display: flex;
   flex-direction: column;
   width: 95%;
-  @media screen and (min-width: 792px){
+  align-content: center;
+  align-items: center;
+  @media screen and (min-width: 792px) {
     width: 92%;
-}
+  }
 }

@@ -1,83 +1,95 @@
 @use "../style";
 
-.appartmentPage{
-    display: flex;
+.appartmentPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.descriptionHeader {
+  @include style.spaceBetween;
+  gap: 2em;
+  @media screen and (max-width: 530px) {
     flex-direction: column;
+    margin: 1px 0;
+    gap: 1em;
+  }
+}
+
+h1 {
+  margin-bottom: 0.3em;
+  @media screen and (max-width: 530px) {
+    font-size: 20px;
+  }
+}
+
+.location {
+  margin-top: 0;
+  @media screen and (max-width: 530px) {
+    font-size: 14px;
+  }
+}
+
+.hostAndRatings {
+  margin: 1.5em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  @media screen and (max-width: 530px) {
+    flex-direction: row-reverse;
     justify-content: space-between;
-}  
-
-.descriptionHeader{
-@include style.spaceBetween;
-gap: 2em;
-@media screen and (max-width: 480px) {
-flex-direction: column;
-margin: 1px 0;
-gap: 1em;
-}
+    align-items: center;
+    margin: 0;
+  }
 }
 
-
-h1{
-    margin-bottom: 0.3em;
-    @media screen and (max-width: 480px) {
-        font-size: 20px;
-        }
+.host {
+  @include style.spaceBetween;
+  gap: 0.5em;
 }
 
-.location{
-    margin-top: 0;
-    @media screen and (max-width: 480px) {
-        font-size: 14px;
-        }
-}
-
-.hostAndRatings{
-    margin: 1.5em 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    @media screen and (max-width: 480px) {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
-        }
-}
-
-.host{
-    @include style.spaceBetween;
-    gap: 0.5em;
-}
-
-.hostPicture{
-    border-radius: 100px;
-    height: 70px;
-    width: 70px;
+.hostPicture {
+  border-radius: 100px;
+  height: 70px;
+  width: 70px;
 }
 
 .hostName {
-    font-weight: 400;
-    font-size: 15px;
-    max-width: 5rem;
-    text-align: end;
+  font-weight: 400;
+  font-size: 15px;
+  max-width: 5rem;
+  text-align: end;
 }
 
-.collapseDescription {
-    display: flex;
-    gap: 4em;
-     & > * {
-        flex: 1 1;
-      } 
-    & p, ul {
-        padding: 2rem 1rem;
-        @media screen and (max-width: 480px) {
-            font-size: 13px;
-            padding-bottom: 0;
-            padding-top: 1,3em;
-            }
+.collapseAppartment {
+  display: flex;
+  gap: 4em;
+  & > * {
+    flex: 1 1;
+  }
+  & p,
+  ul {
+    padding: 2rem 1rem;
+    min-height: 10.5em;
+    @media screen and (max-width: 1000px) {
+      min-height: 13em;
     }
-    @media screen and (max-width: 480px) {
-        flex-direction: column;
-        gap: 1em;
-        }
+    @media screen and (max-width: 905px) {
+      min-height: 15em;
+    }
+    @media screen and (max-width: 700px) {
+      min-height: 18em;
+    }
+    @media screen and (max-width: 530px) {
+      font-size: 13px;
+      padding-bottom: 0;
+      padding-top: 1, 3em;
+      min-height: 12em;
+    }
+  }
+  @media screen and (max-width: 530px) {
+    flex-direction: column;
+    gap: 1em;
+  }
 }

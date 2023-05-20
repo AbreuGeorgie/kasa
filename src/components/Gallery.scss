@@ -25,43 +25,44 @@
 } */
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
-    padding: 2em;
-    margin-top: 2em;
-    border-radius: 1em;
-    background-color: #f6f6f6;
-    @media screen and (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media screen and (max-width: 480px) {
-        grid-template-columns: 1fr;
-        background: none;
-        padding: 0;
-        grid-row-gap: 1em;
-    }
+  display: grid;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  padding: 2em;
+  margin-top: 2em;
+  border-radius: 1em;
+  background-color: #f6f6f6;
+  @media screen and (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 530px) {
+    grid-template-columns: 1fr;
+    background: none;
+    padding: 0;
+    grid-row-gap: 1em;
+  }
 }
 
 .appartment {
-  //background-image: linear-gradient(180deg, #FF6060 0%, #660f0fb7 100%);
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
-  place-items: end start;
+  align-items: flex-end;
   gap: 2em;
   border-radius: 0.5em;
   min-width: 200px;
   min-height: 300px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 700px) {
     min-height: 250px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 530px) {
     width: 100%;
     height: 250px;
-}
+  }
 }
 
 .rentName {

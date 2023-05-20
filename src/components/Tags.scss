@@ -8,9 +8,9 @@
   font-weight: 500;
   background-color: style.$primary-color;
   color: style.$secondary-color;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 530px) {
     font-size: 11px;
-    }
+  }
 }
 
 .tagContainer {
@@ -19,7 +19,7 @@
   gap: 8px;
   padding: 0;
   margin: 1.5em 0 0.2em;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 530px) {
     font-size: 12px;
-    }
+  }
 }
