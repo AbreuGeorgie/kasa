@@ -1,20 +1,97 @@
-# Sleep Well : the smart alarm-clock app
-
-Sleep Well aims at developing a smart alarm clock for iPhones that monitors your breathing rhythm while you sleep to determine your sleep cycles.
+# Kasa
 
 ## Technologies
+
 - JS
-- CSS 
+- CSS
 - React
 
-## Contribute to the project
+## Description
 
-Sleep Well is an open source project. Feel free to fork the source and contribute with your own features.
+[Projet 6](https://openclassrooms.com/fr/paths/717/projects/1247/assignment/) réalisé dans le cadre du programme de formation Développeur Front-end JavaScript React chez OpenClassrooms.
 
-## Authors
+> Créez une application web de location immobilière avec React
 
-Our code squad : Francis & Stéphane
+> ### Contexte :
 
-## Licensing
+Kasa est une entreprise spécialisée dans la location d’appartements entre particuliers depuis près de 10 ans.
 
-This project was built under the Creative Commons licence.
+Le site Kasa a été codé il y a près de 10 ans et l'entreprise souhaite faire une refonte totale de son site pour passer à une stack complète en JavaScript avec NodeJS côté Back-end et React côté Front-end.
+
+Mon rôle a été de développer la partie front-end du site web, en utilisant les composants React, les routes React Router tout en respectant les maquettes Figma.
+
+Lien des maquettes : https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?type=design&node-id=0-1&t=3oNtiCrfbaa6HVOq-0
+
+> ### Compétences évaluées :
+>
+> - Configurer la navigation entre les pages de l'application avec React Router
+> - Initialiser une application avec Create React App
+> - Développer des éléments de l'interface d'un site web grâce à des composants React
+
+## Outils et contraintes techniques :
+
+### 🛠️ Outils standards:
+
+- Create React App;
+- React Router;
+- L’utilisation de Sass est optionnelle. CSS est à utiliser par défaut;
+- Pas de librairie React externe.
+
+### ❗Contraintes techniques
+
+- React :
+  - Découpage en composants modulaires et réutilisables;
+  - Un composant par fichier;
+  - Structure logique des différents fichiers;
+  - Utilisation des props entre les composants;
+  - Utilisation du state dans les composants quand c'est nécessaire;
+  - Gestion des événements;
+  - Listes : React permet de faire des choses vraiment intéressantes avec les listes, en itérant dessus, par exemple avec map. Il faut les utiliser autant que possible.
+  - Il est également recommandé, mais pas imposé, d’utiliser des composants fonctionnels plutôt que des composants classes.
+- React Router :
+  - Les paramètres des routes sont gérés par React Router dans l'URL pour récupérer les informations de chaque logement;
+  - Il existe une page par route;
+  - La page 404 est renvoyée pour chaque route inexistante, ou si une valeur présente dans l’URL ne fait pas partie des données renseignées.
+  - La logique du routeur est réunie dans un seul fichier.
+- Général : Le code ne doit pas produire d'erreur ou de warning dans la console.
+
+### Contraintes fonctionnelles :
+
+- Pour le défilement des photos dans la galerie (composant Gallery) :
+  - Si l'utilisateur se trouve à la première image et qu'il clique sur "Image précédente", la galerie affiche la dernière image;
+  - Inversement, quand l'image affichée est la dernière de la galerie, si l'utilisateur clique sur "Image suivante", la galerie affiche la première image.;
+  - S'il n'y a qu'une seule image, les boutons "Suivant" et "Précédent" ainsi que la numérotation n'apparaissent pas;
+  - La galerie doit toujours rester de la même hauteur, celle indiquée sur la maquette Figma. Les images seront donc coupées et centrées dans le cadre de l’image.
+- Collapse :
+  - Par défaut, les Collapses sont fermés à l'initialisation de la page;
+  - Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer;
+  - Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
+
+## Installation :
+
+1. Cloner le repository:
+
+- `git clone https://github.com/AbreuGeorgie/kasa`
+
+2. Installer toutes les dépendances pour le front-end:
+
+- `npm install` ou `yarn`
+
+3. Lancer le front-end:
+
+- `npm start` ou `yarn start`
+
+Le front-end sera lancé à l'URL:
+`http://localhost:3000/Kasa/`.
+
+## Développé avec :
+
+- [Visual Studio Code](https://code.visualstudio.com/) - Éditeur de texte
+- [React 18](https://react.dev/) - Bibliothèque JavaScript libre développée par Facebook
+- [Create React App](https://create-react-app.dev/) - Boîte à outils créée par Facebook, qui est la référence pour initier un projet React
+- [React Router V6](https://reactrouter.com/) - Bibliothèque de routage pour React
+- [GitHub](https://github.com/) - Outil de gestion de versions
+
+## Auteur :
+
+**Georgie Abreu** : [**GitHub**](https://github.com/AbreuGeorgie/)
