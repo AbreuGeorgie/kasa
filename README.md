@@ -95,15 +95,18 @@ Le front-end sera lancé à l'URL:
 ## Tests fonctionnels
 
 - Tests à réaliser en version desktop et version mobile :
-  - [x] cliquer sur "A propos", la page à propos doit s'afficher et le lien "A propos" doit être souligné tant qu'on est sur la page à propos;
-    - [x] cliquer sur les titres "Fiabilité", "Respect", "Service" et "Sécurité", les collapses doivent se fermer. Une fois fermé si on clique dessus, les collapses doivent se réouvrir.
-  - [x] cliquer sur "Accueil", le lien "Accueil" doit être souligné tant qu'on est sur la page d'accueil;
-  - [x] cliquer sur l'image d'un appartement, la page de description de l'appartement cliqué doit s'ouvrir;
-    - [x] Si le carousel d'image contient plus d'une photo, des fleches gauche et droite doivent s'afficher ainsi que le numéro de l'image:
-      - [x] cliquer sur la flèche de gauche pour afficher la précédente, quand on arrive sur la première image, la dernière doit apparaître lors du clique.
-      - [x] cliquer sur la flèche de droite pour afficher la suivante quand on arrive sur la dernière image, la première doit apparaître lors du clique.
-    - [x] cliquer sur l'image d'un appartement, la page de description de l'appartement cliqué doit s'ouvrir;
-    - [x] cliquer sur les titres "Description" et "Equipement", les collapses doivent se fermer. Une fois fermé si on clique dessus, les collapses doivent se réouvrir.
+
+- [x] cliquer sur "A propos", la page à propos doit s'afficher et le lien "A propos" doit être souligné tant qu'on est sur la page à propos;
+- [x] cliquer sur les titres "Fiabilité", "Respect", "Service" et "Sécurité", les collapses doivent se fermer. Une fois fermé si on clique dessus, les collapses doivent se réouvrir.
+
+- [x] cliquer sur "Accueil", le lien "Accueil" doit être souligné tant qu'on est sur la page d'accueil;
+- [x] cliquer sur l'image d'un appartement, la page de description de l'appartement cliqué doit s'ouvrir;
+
+- [x] Si le carousel d'image contient plus d'une photo, des fleches gauche et droite doivent s'afficher ainsi que le numéro de l'image:
+- [x] cliquer sur la flèche de gauche pour afficher la précédente, quand on arrive sur la première image, la dernière doit apparaître lors du clique.
+- [x] cliquer sur la flèche de droite pour afficher la suivante quand on arrive sur la dernière image, la première doit apparaître lors du clique.
+
+- [x] cliquer sur les titres "Description" et "Equipement", les collapses doivent se fermer. Une fois fermé si on clique dessus, les collapses doivent se réouvrir.
 
 ## Auteur :
 
