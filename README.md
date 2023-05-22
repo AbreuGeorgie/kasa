@@ -1,4 +1,4 @@
-# Kasa
+# [Kasa](/src/assets/logo.png)
 
 ## Technologies
 
