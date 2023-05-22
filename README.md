@@ -94,8 +94,6 @@ Le front-end sera lancé à l'URL:
 
 ## Tests fonctionnels
 
-## Tests fonctionnels
-
 - Tests à réaliser en version desktop et version mobile :
   - [x] cliquer sur "A propos", la page à propos doit s'afficher et le lien "A propos" doit être souligné tant qu'on est sur la page à propos;
     - [x] cliquer sur les titres "Fiabilité", "Respect", "Service" et "Sécurité", les collapses doivent se fermer. Une fois fermé si on clique dessus, les collapses doivent se réouvrir.
