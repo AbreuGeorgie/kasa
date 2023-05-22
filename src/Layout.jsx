@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import "./style.scss";
 import { Outlet } from "react-router-dom";
 
-function Layout(){
+function Layout() {
   return (
     <div className="page">
       <Header />
@@ -11,6 +11,6 @@ function Layout(){
       <Footer />
     </div>
   );
-};
+}
 
 export default Layout;

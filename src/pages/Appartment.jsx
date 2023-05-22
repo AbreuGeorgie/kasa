@@ -13,52 +13,52 @@ function Appartment() {
 
   return (
     <main>
-        <Carousel
-          key={`${fiche.id} - pictures`}
-          pictures={fiche.pictures}
-        />
-        <div className="descriptionHeader">
-          <div>
-            <h1>{fiche.title}</h1>
-            <p className="location">{fiche.location}</p>
-            <Tags
-              key={`${fiche.id} - tags`}
-              tags={fiche.tags}
-              id={fiche.id}
-            />
-          </div>
-          <div className="hostAndRatings">
-            <div className="host">
-              <h3 className="hostName">{fiche.host.name}</h3>
-              <img
-                className="hostPicture"
-                src={fiche.host.picture}
-                alt={`propriétaire`}
-              ></img>
-            </div>
-            <Rating
-              key={`${fiche.id} - rating`}
-              id={fiche.id}
-              rating={fiche.rating}
-            />
-          </div>
+      <Carousel
+        key={`${fiche.id} - pictures`}
+        pictures={fiche.pictures}
+      />
+      <div className="descriptionHeader">
+        <div>
+          <h1>{fiche.title}</h1>
+          <p className="location">{fiche.location}</p>
+          <Tags
+            key={`${fiche.id} - tags`}
+            tags={fiche.tags}
+            id={fiche.id}
+          />
         </div>
-        <div className="collapseAppartment">
-          <div className="collapseDescription">
-            <Collapse
-              key={`${id} - Description Collapse`}
-              title="Description"
-              textCollapse={fiche.description}
-            />
+        <div className="hostAndRatings">
+          <div className="host">
+            <h3 className="hostName">{fiche.host.name}</h3>
+            <img
+              className="hostPicture"
+              src={fiche.host.picture}
+              alt={`propriétaire`}
+            ></img>
           </div>
-          <div className="collapseDescription">
-            <Collapse
-              key={`${id} - Equipments Collapse`}
-              title="Équipements"
-              textCollapse={fiche.equipments}
-            />
-          </div>
+          <Rating
+            key={`${fiche.id} - rating`}
+            id={fiche.id}
+            rating={fiche.rating}
+          />
         </div>
+      </div>
+      <div className="collapseAppartment">
+        <div className="collapseDescription">
+          <Collapse
+            key={`${id} - Description Collapse`}
+            title="Description"
+            textCollapse={fiche.description}
+          />
+        </div>
+        <div className="collapseDescription">
+          <Collapse
+            key={`${id} - Equipments Collapse`}
+            title="Équipements"
+            textCollapse={fiche.equipments}
+          />
+        </div>
+      </div>
     </main>
   );
 }

@@ -1,29 +1,5 @@
 @use "../style";
 
-//voir pour la largeur des cartes
-
-//passer en grip pour mieux disposer les images
-
-/* .gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
-  margin-top: 2em;
-  @media screen and (min-width: 792px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: start;
-    background-color: #f6f6f6;
-    margin-top: 2em;
-    border-radius: 1em;
-    align-content: flex-start;
-    min-height: 20rem;
-    padding: 2rem;
-    gap: 2rem;
-  }
-} */
-
 .gallery {
   display: grid;
   width: -webkit-fill-available;

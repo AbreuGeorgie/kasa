@@ -66,7 +66,7 @@ h1 {
 .collapseAppartment {
   display: flex;
   gap: 4em;
-      width: -webkit-fill-available;
+  width: -webkit-fill-available;
   & > * {
     flex: 1 1;
   }
