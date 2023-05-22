@@ -11,7 +11,7 @@ const Collapse = ({ title, textCollapse }) => {
   };
 
   return (
-    <div className="Collapse">
+    <div className="collapse">
       <h2 onClick={toggleCollapse}>
         {title}
         <span>

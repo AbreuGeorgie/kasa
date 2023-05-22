@@ -12,8 +12,7 @@ function Appartment() {
   const fiche = data.filter((fiche) => id === fiche.id)[0];
 
   return (
-    <div className="appartmentPage">
-      <div>
+    <main>
         <Carousel
           key={`${fiche.id} - pictures`}
           pictures={fiche.pictures}
@@ -60,8 +59,7 @@ function Appartment() {
             />
           </div>
         </div>
-      </div>
-    </div>
+    </main>
   );
 }
 

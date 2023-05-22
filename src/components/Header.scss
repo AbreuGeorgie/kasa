@@ -10,6 +10,9 @@
   align-items: center;
   margin: 2em 2em 0.5em;
   width: 92%;
+  @media screen and (max-width: 530px) {
+    width: 89%;
+  }
 }
 
 .kasa {
