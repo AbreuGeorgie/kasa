@@ -6,6 +6,10 @@ $secondary-color: white;
   background-size: cover;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
