@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./error.scss";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 export default function ErrorPage() {
   return (
@@ -18,6 +19,7 @@ export default function ErrorPage() {
           <p>Retourner sur la page d'accueil</p>
         </Link>
       </div>
+      <Footer />
     </>
   );
 }
