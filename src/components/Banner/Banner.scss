@@ -3,16 +3,20 @@
 .banner {
   position: relative;
   height: 200px;
-  width: 100%;
+  width: 1240px;
   margin-top: 2rem;
   border-radius: 1em;
-
-  @media screen and (min-width: 700px) {
+  @media screen and (max-width: 1090px) {
+    width: 776px;
+  }
+  @media screen and (max-width: 700px) {
     border-radius: 0.5em;
+    width: 404px;
   }
   @media screen and (max-width: 530px) {
     margin-top: 0;
-    height: 120px;
+    width: 335px;
+    height: 111px;
   }
 }
 
@@ -39,6 +43,11 @@
   margin: 0;
   font-size: 48px;
   font-weight: 500;
+  @media screen and (max-width: 700px) {
+    line-height: 150px;
+    top: 1em;
+    font-size: 25px;
+  }
   @media screen and (max-width: 530px) {
     width: 232px;
     line-height: normal;

@@ -6,6 +6,12 @@ $secondary-color: white;
   background-size: cover;
 }
 
+html{
+  display: flex;
+  justify-content: center;
+
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -15,8 +21,6 @@ body {
   color: $primary-color;
   font-weight: 400;
   font-size: "14px";
-  width: 100%;
-  min-width: 300px;
   margin: 0;
 }
 

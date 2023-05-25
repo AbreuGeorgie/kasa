@@ -10,7 +10,10 @@
   padding-top: 2rem;
   font-size: 22px;
   margin: 2em 0 0 !important;
-  width: 100%;
+  width: 1440px;
+  @media screen and (max-width: 530px) {
+    width: 530px;
+  }
 }
 
 .blackLogo {
