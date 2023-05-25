@@ -1,6 +1,6 @@
 import data from "../../data.json";
 import Rating from "../../components/Rating/Raiting";
-import Tags from "../../components/Tag/Tags";
+import Tag from "../../components/Tag/Tag";
 import { useSearchParams } from "react-router-dom";
 import Collapse from "../../components/Collapse/Collapse";
 import Carousel from "../../components/Carousel/Carousel";
@@ -21,11 +21,15 @@ function Appartment() {
         <div>
           <h1>{fiche.title}</h1>
           <p className="location">{fiche.location}</p>
-          <Tags
-            key={`${fiche.id} - tags`}
-            tags={fiche.tags}
-            id={fiche.id}
-          />
+          <ul className="tagContainer">
+            {fiche.tags.map((tag) => (
+              <Tag
+                key={`${fiche.id} - ${tag}`}
+                tagName={tag}
+                id={id}
+              />
+            ))}
+          </ul>
         </div>
         <div className="hostAndRatings">
           <div className="host">

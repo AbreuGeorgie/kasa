@@ -48,18 +48,23 @@ h1 {
 .host {
   @include style.spaceBetween;
   gap: 0.5em;
+  align-items: center;
 }
 
 .hostPicture {
   border-radius: 100px;
-  height: 70px;
-  width: 70px;
+  height: 64px;
+  width: 64px;
+  @media screen and (max-width: 530px) {
+    height: 32px;
+    width: 32px;
+  }
 }
 
 .hostName {
   font-weight: 400;
   font-size: 15px;
-  max-width: 5rem;
+  width: min-content;
   text-align: end;
 }
 
