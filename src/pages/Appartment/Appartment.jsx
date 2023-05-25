@@ -1,9 +1,9 @@
-import data from "../data.json";
-import Rating from "../components/Raiting";
-import Tags from "../components/Tags";
+import data from "../../data.json";
+import Rating from "../../components/Rating/Raiting";
+import Tags from "../../components/Tag/Tags";
 import { useSearchParams } from "react-router-dom";
-import Collapse from "../components/Collapse";
-import Carousel from "../components/Carousel";
+import Collapse from "../../components/Collapse/Collapse";
+import Carousel from "../../components/Carousel/Carousel";
 import "./Appartment.scss";
 
 function Appartment() {

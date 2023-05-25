@@ -1,4 +1,4 @@
-import black_logo from "../assets/black_logo.png";
+import black_logo from "../../assets/black_logo.png";
 import "./Footer.scss";
 
 function Footer() {

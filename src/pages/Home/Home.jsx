@@ -1,6 +1,6 @@
-import Gallery from "../components/Gallery";
-import Banner from "../components/Banner";
-import vagues from "../assets/vagues.png";
+import Gallery from "../../components/Gallery/Gallery";
+import Banner from "../../components/Banner/Banner";
+import vagues from "../../assets/vagues.png";
 
 function Home() {
   return (
