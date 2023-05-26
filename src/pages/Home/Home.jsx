@@ -16,9 +16,9 @@ function Home() {
       <section className="thumbContainer">
         {data.map((appartment) => (
           <Link
-          to={`/appartment?id=${appartment.id}`}
-          className="appartment"
-          key={appartment.id}
+            to={`/appartment?id=${appartment.id}`}
+            className="appartment"
+            key={appartment.id}
           >
             <Thumb
               imgUrl={appartment.cover}
