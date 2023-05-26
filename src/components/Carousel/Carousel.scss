@@ -58,4 +58,7 @@
   color: style.$secondary-color;
   font-weight: 500;
   font-size: 20px;
+  @media screen and (max-width: 530px) {
+    display: none;
+  }
 }
