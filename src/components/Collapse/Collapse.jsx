@@ -22,7 +22,7 @@ const Collapse = ({ title, textCollapse }) => {
           )}
         </span>
       </h2>
-      {isCollapsed ? (
+      {isCollapsed && (
         <div className="textCollapse">
           {typeof textCollapse === "object" ? (
             <ul>
@@ -34,8 +34,6 @@ const Collapse = ({ title, textCollapse }) => {
             <p>{textCollapse}</p>
           )}
         </div>
-      ) : (
-        ""
       )}
     </div>
   );
