@@ -9,15 +9,10 @@
   @include style.spaceBetween;
   align-items: center;
   margin: 2em 2em 0.5em;
-  width: 1240px;
-  @media screen and (max-width: 1090px) {
-    width: 776px;
-  }
-  @media screen and (max-width: 700px) {
-    width: 404px;
-  }
+  max-width: 1240px;
+  width: 100%;
   @media screen and (max-width: 530px) {
-      width: 335px;
+    width: 335px;
   }
 }
 
