@@ -1,12 +1,5 @@
 @use "../../style";
 
-.appartmentPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .descriptionHeader {
   @include style.spaceBetween;
   width: -webkit-fill-available;
