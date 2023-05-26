@@ -6,13 +6,13 @@ $secondary-color: white;
   background-size: cover;
 }
 
-html{
+html {
   display: flex;
   justify-content: center;
-
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -37,6 +37,10 @@ a {
   text-decoration: none;
   &:hover {
     text-decoration: none;
+    transform: scale(1.1);
+    @media screen and (max-width: 530px) {
+      transform: none;
+    }
   }
 }
 
@@ -71,6 +75,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 2em;
 }
 
 main {
@@ -78,10 +83,10 @@ main {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  margin: 0 1.5em;
-  width: -webkit-fill-available;
-  width: -moz-available;
-  @media screen and (min-width: 792px) {
-    width: 92%;
+  margin: 0 2em;
+  max-width: 1240px;
+  width: 100%;
+  @media screen and (max-width: 530px) {
+    width: 335px;
   }
 }
