@@ -6,25 +6,38 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 8em;
-  margin-bottom: 8em;
+  margin-top: 4em;
+  margin-bottom: 4em;
   width: 100%;
+  @media screen and (max-width: 530px) {
+    margin-top: 8em;
+  }
 }
 
 .number {
-  font-size: 10rem;
+  font-size: 288px;
   font-weight: 700;
   margin: 0em;
+  @media screen and (max-width: 530px) {
+    font-size: 96px;
+  }
 }
 
 .text_error {
-  font-size: 1rem;
+  font-size: 36px;
   font-weight: 500;
+  text-align: center;
+  @media screen and (max-width: 530px) {
+    font-size: 18px;
+  }
 }
 
 .link_error {
   margin-top: 6em;
-  font-size: 0.8rem;
+  font-size: 18px;
+  @media screen and (max-width: 530px) {
+    font-size: 14px;
+  }
 }
 
 .link_error:visited {
